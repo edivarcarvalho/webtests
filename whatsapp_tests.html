@@ -1,24 +1,5 @@
 <!DOCTYPE HTML>
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : 'your-app-id',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.12'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
 <html>
 	<head>
 		<title>Tests page</title>
@@ -35,20 +16,36 @@
 			Share via Whatsapp</a>
 		<br>
 		<br>
-			
-			
-		FB.ui({
-		  method: 'send',
-		  link: 'http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html',
-		});
-		
-		<br>
-		<br>
 		<a href=”fb-messenger://share/?link=https%3A%2F%2Fdevelopers.facebook.com”
 		   
 		   style="font-size: 20px; text-decoration: none">
 			Send In Messenger - Mobile</a>
 		</p>
+		
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId            : 'your-app-id',
+					autoLogAppEvents : true,
+					xfbml            : true,
+					version          : 'v2.12'
+				});
+			};
+
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		FB.ui({
+		  method: 'send',
+		  link: 'http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html',
+		});
+
 
 	</body>
 
