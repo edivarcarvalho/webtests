@@ -25,10 +25,12 @@
 		<script>
 			window.fbAsyncInit = function() {
 				FB.init({
-					appId            : 'your-app-id',
-					autoLogAppEvents : true,
-					xfbml            : true,
 					version          : 'v2.12'
+				});
+				
+				FB.ui({
+					method: 'send',
+					link: 'http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html',
 				});
 			};
 
@@ -41,10 +43,7 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		
-		FB.ui({
-		  method: 'send',
-		  link: 'http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html',
-		});
+		
 
 
 	</body>
