@@ -1,0 +1,121 @@
+{% extends "templates/email/partials/base-responsive.html" %}
+{% block header %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+  <tr>
+    <td valign="top" class="headerContent">
+      <img src="https://images.nubank.com.br/acquisition/header-invite-code-card-1-card-front.png" alt="Seu pedido foi aprovado" style="max-width:600px;" id="headerImage" />
+    </td>
+  </tr>
+</table>
+{% endblock %}
+{% block content %}
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+  <tr>
+    <td valign="top">
+      <h2>Olá, <strong class="highlight">[[preferred_name]]</strong>!</h2>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Após olharmos com muito cuidado o seu pedido, gostaríamos de <strong>te convidar para se juntar a nós e abraçar a liberdade e a simplicidade que somente o Nubank pode te dar</strong>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Para <strong>finalizar o seu pedido</strong> e ter o seu cartão em mãos, é <strong>simples e rápido</strong>.</p>
+      <p>Basta <strong>seguir os passos abaixo</strong> o quanto antes para evitar que seu convite expire:</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr class="shortDivider">
+    </td>
+  </tr>
+  <tr>
+    <td class="closing sectionHowto">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td valign="top">
+            <img class="spaceM" src="https://images.nubank.com.br/smartphone.png" alt="Smartphone" />
+            <p class="spaceS">Baixe nosso app,<br />o processo todo é feito pelo smartphone</p>
+            <a href="https://itunes.apple.com/us/app/nubank/id814456780?ls=1&mt=8">
+              <img src="https://images.nubank.com.br/appstore.png" alt="App Store" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.nu.production">
+              <img src="https://images.nubank.com.br/playstore.png" alt="Play Store" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <img src="https://images.nubank.com.br/arrow_down.png" alt=" " />
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <p class="spaceS">Insira seu convite:</p>
+            <p class="inviteCode">[[invite_code]]</p>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <img src="https://images.nubank.com.br/arrow_down.png" alt=" " />
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+        <tr>
+          <td>
+            <p>Siga as instruções para enviar seus documentos para aprovação e pronto. Agora é só aproveitar!</p>
+            <p>Se tornar um Nu significa abraçar a liberdade e a simplicidade que somente o Nubank pode te dar.</p>
+          </td>
+        </tr>
+ <tr>
+    <td>
+      <hr class="shortDivider">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h2><strong class="highlight">Estes são alguns benefícios:</strong></h2>
+    </td>
+  </tr>
+     <tr>
+        <td valign="top">
+          <img src="https://images.nubank.com.br/acquisition/invite_code_controle_icon.png" alt="limite" width="50px"/>
+          <p><strong>Controle total</strong> do seu limite disponível a qualquer momento, pelo próprio app</p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <img src="https://images.nubank.com.br/acquisition/invite_code_atendimento_icon.png" alt="chat" width="50px"/>
+          <p><strong>Atendimento</strong> rápido e eficiente</p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <img src="https://images.nubank.com.br/acquisition/invite_code_internacional_icon.png" alt="internacional"width="50px" />
+          <p><strong>Cartão internacional</strong>, aceito em mais de 30 milhões de estabelecimentos pelo mundo</p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <img src="https://images.nubank.com.br/acquisition/invite_code_desconto_icon.png" alt="desconto" width="50px"/>
+          <p>Você poderá <strong>antecipar suas compras parceladas</strong> a qualquer momento para ganhar descontos</p>
+        </td>
+      </tr>
+  <tr>
+    <td>
+      <p>E o melhor: <strong>tudo isso de graça!</strong></p>
+      <p>Burocracia custa dinheiro. Nós somos eficientes <strong>para você não pagar nada</strong>.</p>
+      <p>Em breve, <strong>você também fará parte da comunidade Nu</strong>!</p>
+    </td>
+  </tr>
+  <tr>
+      <td class="closing">
+          <p class="closing">Abraços,<br>Equipe Nubank</p>
+      </td>
+  </tr>
+</table>
+{% endblock %}
